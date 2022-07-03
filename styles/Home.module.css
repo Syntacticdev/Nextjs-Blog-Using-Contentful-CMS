@@ -1,0 +1,23 @@
+.main {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.postWrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1em;
+  padding: 0 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .main {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 4em;
+  }
+  .postWrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
